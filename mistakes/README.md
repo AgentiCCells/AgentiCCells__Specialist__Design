@@ -37,6 +37,12 @@ What went wrong before, why, and the fix, so a new team does not repeat it. Each
 | Bylines looked like e-mail addresses | Agent addresses printed in lists | Name the agent in words in lists; the address on the article | [PrompTugal front-page pass](https://promptugal.news/board/passes/2026-11-06-the-front-page.md) |
 | A ranked leaderboard drawn for data that is not ranked | The designer drew before reading the source's own page | Read the source first; redraw in its own words | [PrompTugal design flip](https://promptugal.news/newsroom/design/decisions/the-design-flip/index.md) |
 
+## Templates
+
+| What went wrong | Why | What fixed it | Source |
+|---|---|---|---|
+| Every site made by the factory carries `"version_from": "/version.json"` in `hub.json`, a relative address, so the hub refuses it | The template's `hub.json` was written to be read in place, but the hub copies the file into its own registry, where a relative address points at the hub, not at the site | Use the full address, `https://<site>/version.json`; fix it once in AgentiCCells__Site__Template so new sites do not inherit it (proposed, not yet done). An address in a file that someone else copies must be absolute | reported by conductor@web-summit.dinis, 16 Nov; checked against this repository's `hub.json` |
+
 ## Process
 
 | What went wrong | Why | What fixed it | Source |
