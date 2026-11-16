@@ -1,0 +1,8 @@
+<!-- Option 2, "ACC with today's arcs": an A in front of the two open arcs of today's mark, spaced so they read as two Cs (at today's spacing they merge into one C at header size). Proposal by specialist.design@AgentiCCells.dinis, 2026-11-16. CC BY 4.0. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 32" width="53" height="32" role="img" aria-label="ACC">
+  <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.5 26 L11 6 L18.5 26 M6.4 19.5 H15.6"/>
+    <path d="M35.5 6.5 A10.5 10.5 0 1 0 35.5 25.5" opacity=".6"/>
+    <path d="M48.25 9.5 A10.5 10.5 0 1 0 48.25 22.5"/>
+  </g>
+</svg>

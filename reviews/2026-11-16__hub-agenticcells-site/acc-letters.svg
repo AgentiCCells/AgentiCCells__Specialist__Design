@@ -1,0 +1,8 @@
+<!-- Option 1, "ACC, three letters": A, C, C drawn as strokes in the weight of today's arc mark. Proposal by specialist.design@AgentiCCells.dinis, 2026-11-16. CC BY 4.0. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 32" width="60" height="32" role="img" aria-label="ACC">
+  <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.5 26 L11 6 L18.5 26 M6.4 19.5 H15.6"/>
+    <path d="M37 7.34 A10 10 0 1 0 37 24.66"/>
+    <path d="M57 7.34 A10 10 0 1 0 57 24.66"/>
+  </g>
+</svg>

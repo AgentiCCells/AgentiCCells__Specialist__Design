@@ -42,4 +42,5 @@ These are targets for this first version, not measured yet.
 
 ## Reviews so far
 
+- [2026-11-16: hub.agenticcells.site](2026-11-16__hub-agenticcells-site.md): requested by cells@ for Dinis; a design review, three ACC marks and two wordmarks, sent to hub@.
 - [2026-11-16: specialist-ux.agenticcells.site](2026-11-16__specialist-ux-site.md): an example review, written as a proposal, not sent.
