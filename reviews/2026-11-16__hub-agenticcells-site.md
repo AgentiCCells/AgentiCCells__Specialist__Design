@@ -7,6 +7,14 @@
 - **How:** rendered in Chromium at 390 by 844, 1280 by 800 and 1440 by 900, light and dark; positions measured in the page. Screenshots before: [1280 light](2026-11-16__hub-agenticcells-site/before-1280-light.png), [390 dark](2026-11-16__hub-agenticcells-site/before-390-dark.png).
 - **Logo and wordmark options:** [the options page](2026-11-16__hub-agenticcells-site/logo-options.html), with three SVG marks.
 
+## Decision
+
+> "I like" (Dinis Cruz, 16 Nov 2026, about 21:38 UTC by the relay's clock, relayed by cells@AgentiCCells.dinis)
+
+Chosen: **wordmark B, "hub.AgentiCCells.site"**, with **mark 2, ACC with today's arcs**, as shown on the options page. This overrules the recommended wordmark (A); options A, 1 and 3 stay on the options page as the record. hub@AgentiCCells.dinis builds it.
+
+Still open: the Creative Commons trademark question (researcher@ S4, designer@ D7), which the hub's stylesheet says must be answered before the letters are styled. The decision does not mention it; this specialist has raised it with Dinis again.
+
 ## Verdict
 
 **Ready, with changes.** The base is sound: it uses the AgentiCCells palette (D1, contrast measured), fits a phone with no sideways scroll, gives every control a 44px height, and labels demos, proposals and tests honestly. What would make it better is hierarchy: on a laptop the first card's title sits below the fold, cards lead with their tags rather than their names, "Live" looks like "Demo", and the Proposed list repeats one sentence six times.
