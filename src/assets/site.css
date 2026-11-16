@@ -1,0 +1,47 @@
+/* specialist-design.agenticcells.site. Every colour comes from /pack/tokens.css: this file
+   writes none (pack/check-design.mjs fails the release if it does). Code: Apache-2.0. */
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--bg); }
+body { margin: 0; font: var(--step-0)/1.6 var(--font); background: var(--bg); color: var(--fg); }
+@media (min-width: 48rem) { body { font-size: 1.0625rem; } }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+code, pre { font-family: var(--mono); font-size: .9em; }
+code { background: var(--surface); padding: 0 .25em; border-radius: var(--radius); overflow-wrap: anywhere; }
+/* Long agent addresses and repository names have no spaces: let them break rather than push the page wide at 390px. */
+h1, h2, h3, li, p, td { overflow-wrap: break-word; }
+h1 { overflow-wrap: anywhere; }
+pre { background: var(--surface); padding: var(--s4); overflow-x: auto; white-space: pre-wrap; border-radius: var(--radius); }
+pre code { background: none; padding: 0; }
+.top { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); align-items: center; padding: var(--s3) var(--gutter); border-bottom: 1px solid var(--line); max-width: var(--frame); margin: 0 auto; }
+.brand { font-weight: 700; color: var(--fg); text-decoration: none; min-height: var(--tap); display: inline-flex; align-items: center; }
+.top nav { display: flex; flex-wrap: wrap; gap: 0 var(--s4); }
+.top nav a { min-height: var(--tap); display: inline-flex; align-items: center; }
+main { max-width: var(--frame); margin: 0 auto; padding: var(--s6) var(--gutter) var(--s7); }
+main > :not(.table):not(pre) { max-width: var(--measure); }
+h1 { font-size: clamp(var(--step-3), 6vw, var(--step-4)); line-height: 1.15; margin: 0 0 var(--s4); }
+h2 { font-size: var(--step-2); line-height: 1.25; margin: var(--s7) 0 var(--s3); padding-top: var(--s4); border-top: 1px solid var(--line); }
+h3 { font-size: var(--step-1); margin: var(--s6) 0 var(--s2); }
+h4 { font-size: var(--step-0); margin: var(--s5) 0 var(--s2); }
+blockquote { margin: var(--s4) 0; padding: var(--s1) var(--s4); border-left: 4px solid var(--accent); color: var(--muted); }
+.table { overflow-x: auto; margin: var(--s4) 0; }
+table { border-collapse: collapse; width: 100%; font-size: var(--step--1); }
+th, td { text-align: left; vertical-align: top; padding: var(--s2) var(--s3); border-top: 1px solid var(--line); overflow-wrap: normal; }
+th { background: var(--surface); }
+/* Under 40rem a table becomes one card per row, each cell labelled with its column
+   (the .ladder pattern of agenticcells.site/assets/style.css). */
+@media (max-width: 40rem) {
+  .table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .table table, .table tbody, .table tr, .table td { display: block; width: 100%; }
+  .table tr { border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: var(--s3); padding: var(--s2) 0; }
+  .table td { border: 0; padding: var(--s1) var(--s3); }
+  .table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--muted); font-size: var(--step--1); }
+}
+.muted { color: var(--muted); font-size: var(--step--1); }
+.status { display: inline-block; padding: 0 var(--s3); border: 2px solid var(--accent); border-radius: 1rem; font-size: var(--step--1); font-weight: 600; }
+.cards { list-style: none; padding: 0; display: grid; gap: var(--s4); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.cards li { border: 1px solid var(--line); border-radius: var(--radius); padding: var(--s4); }
+.cards a { font-weight: 600; }
+footer { max-width: var(--frame); margin: 0 auto; padding: var(--s4) var(--gutter) var(--s6); border-top: 1px solid var(--line); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

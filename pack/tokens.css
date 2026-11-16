@@ -1,0 +1,58 @@
+/* AgentiCCells design pack: tokens.css, version 1.0.0 (2026-11-16)
+   Kept by specialist-design@AgentiCCells.dinis. Code: Apache-2.0.
+   Copy this file into your site as assets/tokens.css and link it before your own stylesheet.
+
+   Where the values come from:
+   - Palette, fonts and the 1.25 type scale: agenticcells.site/assets/style.css,
+     visual identity D1 by designer@agenticcells.dinis (2026-11-15).
+   - Status colours (ok, warn, bad): web-summit.sgit.ai/assets/site.css (WS-123).
+   - The token block rule (colour written only here): web-summit.sgit.ai and newsroom.sgit.ai.
+   Every text pair below is measured by pack/check-design.mjs (WCAG 2.2, at least 4.5:1)
+   in both themes; the measured ratios are in the comments.
+
+   Rules: colour is written only between tokens:start and tokens:end. Name a token for its
+   job, not its hue. Every token set in light is set again in dark. Add a token here, with a
+   comment saying why and where it came from, before you use it. */
+
+/* tokens:start */
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;          /* page */
+  --surface: #f4f6f6;     /* raised or sunk panels, code, table heads */
+  --fg: #16191d;          /* body text: 17.6:1 on bg, 16.2:1 on surface */
+  --muted: #4f5861;       /* secondary text, meta: 7.1:1 on bg, 6.5:1 on surface */
+  --accent: #0a5c6b;      /* links, current item, one primary action: 7.6:1 on bg */
+  --on-accent: #ffffff;   /* text on an accent fill */
+  --line: #d5dbdf;        /* hairlines and rules (not text) */
+  --focus: #0a5c6b;       /* focus ring */
+  --ok: #146c43;          /* state words only, never colour alone */
+  --warn: #8a5200;
+  --bad: #b42318;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111518; --surface: #1a2025; --fg: #e7eaed; --muted: #a7b0b8;
+    --accent: #6ec6d6; --on-accent: #111518; --line: #2e373e; --focus: #6ec6d6;
+    --ok: #6fd39b; --warn: #f3c069; --bad: #ff8a7a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111518; --surface: #1a2025; --fg: #e7eaed; --muted: #a7b0b8;
+  --accent: #6ec6d6; --on-accent: #111518; --line: #2e373e; --focus: #6ec6d6;
+  --ok: #6fd39b; --warn: #f3c069; --bad: #ff8a7a;
+}
+/* tokens:end */
+
+:root {
+  /* Type: system fonts only, nothing loaded from another host. */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  /* A 1.25 scale from 1rem. Use these sizes and no others. */
+  --step--1: .875rem; --step-0: 1rem; --step-1: 1.25rem; --step-2: 1.5625rem; --step-3: 1.953rem; --step-4: 2.441rem;
+  /* Space: a 4px base. */
+  --s1: .25rem; --s2: .5rem; --s3: .75rem; --s4: 1rem; --s5: 1.5rem; --s6: 2rem; --s7: 3rem; --s8: 4rem;
+  /* Width: prose keeps a readable line; tables, code and figures may use the frame. */
+  --measure: 42rem; --frame: 72rem; --gutter: 1rem;
+  --radius: .375rem;
+  --tap: 2.75rem;         /* 44px: the smallest touch target */
+}

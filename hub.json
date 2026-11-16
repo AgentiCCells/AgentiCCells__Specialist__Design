@@ -1,10 +1,13 @@
 {
   "schema": "hub.json (draft)",
   "name": "Specialist: Design",
-  "what_it_does": "Home of the Design specialist agent, which keeps the design system for SGit and its teams and gives them a bootstrap pack, reviews on request, comments and current guidance.",
+  "what_it_does": "Home of the Design specialist agent, which keeps the design system for SGit and its teams: twenty principles with sources, the best examples, past mistakes, a day-one pack with a measured token file and a design check, and reviews on request.",
   "owner": "AgentiCCells",
-  "team": "factory@AgentiCCells.dinis, instructed by Dinis Cruz",
-  "licence": { "code": "Apache-2.0", "text": "CC BY 4.0" },
+  "team": "specialist-design@AgentiCCells.dinis, instructed by Dinis Cruz",
+  "licence": {
+    "code": "Apache-2.0",
+    "text": "CC BY 4.0"
+  },
   "repository": "https://github.com/AgentiCCells/AgentiCCells__Specialist__Design",
   "live_address": "https://specialist-design.agenticcells.site",
   "version_from": "/version.json"

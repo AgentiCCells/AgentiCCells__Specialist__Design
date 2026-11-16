@@ -4,69 +4,62 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Specialist: Design</title>
-<meta name="description" content="The Design specialist agent keeps the design system for SGit and its teams: tokens, patterns, the best examples and what good looks like. It gives teams a bootstrap pack, reviews on request, comments and current guidance.">
-<style>
-body{margin:0;font:18px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;background:#fbf7f0;color:#222}
-main{max-width:40rem;margin:0 auto;padding:3rem 1rem}
-h1{font-size:2rem;line-height:1.2;margin-bottom:.25rem}
-h2{font-size:1.3rem;margin-top:2.5rem}
-a{color:#1a5a8a}
-.status{display:inline-block;padding:.1rem .6rem;border:1px solid #b7791f;border-radius:1rem;color:#7a4f10;font-size:.9rem}
-.placeholder{display:block;margin:.5rem 0;border-left:4px solid #b7791f;background:#f3ead8;padding:.5rem 1rem}
-dt{font-weight:600;margin-top:1rem}
-dd{margin-left:0}
-code{font-size:.9em}
-.muted{color:#666;font-size:.9rem}
-footer{margin-top:3rem;border-top:1px solid #ddd;padding-top:1rem}
-@media(prefers-color-scheme:dark){
-body{background:#17140f;color:#eee}
-a{color:#8cc4ef}
-.status{color:#f0c27a;border-color:#f0c27a}
-.placeholder{background:#2a2318;border-color:#f0c27a}
-.muted{color:#aaa}
-footer{border-color:#333}
-}
-</style>
+<meta name="description" content="The Design specialist agent keeps the design system for SGit and its teams: tokens, patterns, the best examples and what good looks like. It gives teams a day-one pack, reviews on request, comments and current guidance.">
+<link rel="stylesheet" href="/pack/tokens.css">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+<header class="top">
+<a class="brand" href="/">Specialist: Design</a>
+<nav aria-label="Sections">
+<a href="/guidance/">Guidance</a>
+<a href="/examples/">Examples</a>
+<a href="/mistakes/">Mistakes</a>
+<a href="/pack/">Pack</a>
+<a href="/reviews/">Reviews</a>
+<a href="/abp/specialist-design.html">Policy</a>
+</nav>
+</header>
 <main>
 <h1>Specialist: Design</h1>
-<p>Status: <span class="status">starting</span></p>
+<p>Status: <span class="status">first version</span> · guidance 1.0.0, 16 November 2026</p>
 
-<p>The Design specialist is a long-lived agent, <code>specialist.design@AgentiCCells.dinis</code>. It keeps the design system for SGit and its teams: the tokens, the patterns, the best examples, and a clear account of what good looks like.</p>
+<p>The design system for SGit, AgentiCCells and their teams: the tokens, the patterns, the best examples, and what good looks like, compressed from what our sites already do. Kept by a long-lived agent, <code>specialist-design@AgentiCCells.dinis</code>. The person who owns the skill is Dinis Cruz.</p>
 
-<p>It does not do other teams' work. It helps them do their own: it bootstraps new teams with a pack, reviews when asked, comments on pull requests and drafts, and keeps the guidance current. It works through lanes and repositories, alongside the other agents that share its name or a compatible focus.</p>
+<p>It does not do other teams' work. It gives them a pack on day one, reviews when asked, comments where the work is, and keeps the guidance current.</p>
 
-<p>A person owns the skill. For now that is Dinis Cruz, until he names someone else.</p>
+<h2>Starting a new team?</h2>
+<p>Copy <a href="/pack/">the day-one pack</a>: a measured token file, a design check for your release, a definition of done, a section for your CLAUDE.md, and templates for a spec and a decision page. Then read <a href="/guidance/principles.html">the twenty principles</a> once.</p>
 
-<h2>What a team gets</h2>
-<dl>
-<dt>A bootstrap pack</dt>
-<dd>When a new team starts, the specialist bootstraps it with a pack, so it starts from the design system rather than from nothing. <span class="placeholder"><strong>Placeholder:</strong> the contents of the pack are not published yet.</span></dd>
-<dt>A review on request</dt>
-<dd>A team can ask the specialist to review its work.</dd>
-<dt>Comments on pull requests and drafts</dt>
-<dd>The specialist comments where the work is, in pull requests and drafts, so the advice sits next to the change it is about.</dd>
-<dt>Guidance kept current</dt>
-<dd>The specialist keeps the design guidance current, so teams work from the latest version.</dd>
-</dl>
+<h2>What is here</h2>
+<ul class="cards">
+<li><a href="/guidance/principles.html">Principles</a><br>Twenty rules, each with its source and an example you can open.</li>
+<li><a href="/guidance/process.html">How design work runs</a><br>From the owner's words to a checked release.</li>
+<li><a href="/examples/">Examples</a><br>The token files, brand guides, decisions and reviews worth copying.</li>
+<li><a href="/mistakes/">Mistakes</a><br>What went wrong before, why, and what fixed it.</li>
+<li><a href="/guidance/tokens-by-estate.html">Tokens by estate</a><br>AgentiCCells, SGit, PrompTugal and RiskMandate side by side.</li>
+<li><a href="/reviews/">Reviews</a><br>How to ask, what you get, and an example.</li>
+</ul>
 
 <h2>How to ask for a review</h2>
-<p>Requests will come in through a lane.</p>
-<p class="placeholder"><strong>Placeholder:</strong> the review lane is not wired yet. Its address and the format of a request will be written here once it exists.</p>
+<p>Put a file in <code>reviews/requests/</code> of <a href="https://github.com/AgentiCCells/AgentiCCells__Specialist__Design">AgentiCCells__Specialist__Design</a>, from <a href="/reviews/requests/TEMPLATE.html">the template</a>, or send a message to this specialist's session. A lane will replace both once it is wired. You get a verdict, what works, findings with evidence and a proposed fix, written in this repository; nothing is pushed to yours. <a href="/reviews/">More on reviews</a>.</p>
 
-<h2>Status</h2>
-<p>Starting. This page is the first version of the specialist's home. The bootstrap pack, the guidance and the review lane are not published yet; they will be listed here as they become real.</p>
+<h2>What is not here yet</h2>
+<ul>
+<li>The review lane: not wired.</li>
+<li>The repositories behind the sites were not read for this version, only their public pages; the storm site and the iOS apps' visual identity are not covered yet. <a href="/guidance/#what-is-not-covered-yet">Details</a>.</li>
+<li>Turnaround times are targets, not measured.</li>
+</ul>
 
 <h2>Read more</h2>
 <ul>
+<li><a href="/abp/specialist-design.html">This specialist's behaviour policy</a>: deny by default; what it may read, write and comment on.</li>
 <li><a href="https://newsroom.sgit.ai/articles/specialist-agents-for-every-team.html">Specialist agents for every team</a>, the article that describes this kind of agent.</li>
 <li><a href="https://agenticcells.site">agenticcells.site</a>, the home of AgentiCCells.</li>
 </ul>
-
-<footer>
-<p class="muted">Version __VERSION__ · Made by the <a href="https://github.com/AgentiCCells/AgentiCCells__Site__Factory">AgentiCCells site factory</a> · Code Apache-2.0, text CC BY 4.0.</p>
-</footer>
 </main>
+<footer>
+<p class="muted">Version __VERSION__ · Made by the <a href="https://github.com/AgentiCCells/AgentiCCells__Site__Factory">AgentiCCells site factory</a>, kept by <code>specialist-design@AgentiCCells.dinis</code> · Code Apache-2.0, text CC BY 4.0.</p>
+</footer>
 </body>
 </html>

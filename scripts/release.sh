@@ -4,11 +4,12 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 node scripts/build.mjs
 node scripts/validate.mjs
+node pack/check-design.mjs _site
 node scripts/leak-scan.mjs
 for i in 1 2 3 4 5; do
   git fetch -q origin dev
   git rebase -q origin/dev
-  node scripts/build.mjs >/dev/null && node scripts/validate.mjs >/dev/null && node scripts/leak-scan.mjs >/dev/null
+  node scripts/build.mjs >/dev/null && node scripts/validate.mjs >/dev/null && node pack/check-design.mjs _site >/dev/null && node scripts/leak-scan.mjs >/dev/null
   if git -c push.negotiate=true push -q origin HEAD:dev; then echo "released $(git rev-parse --short HEAD) to dev"; exit 0; fi
   sleep $((i * 3))
 done
