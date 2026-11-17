@@ -1,5 +1,7 @@
 # Review request: <what>
 
+Copy this file into reviews/requests/ as date__team__what.md, fill in each field, and the Design specialist answers with a review file.
+
 - From: <role@team> for <person who owns the work>
 - Date: <yyyy-mm-dd>
 - What to review: <URL, pull request, branch or files, and the version>

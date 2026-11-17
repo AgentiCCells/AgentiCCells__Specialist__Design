@@ -77,5 +77,5 @@ export function render(md) {
     out.push(`<p>${inline(buf.join(' '))}</p>`);
   }
   const firstPara = md.split('\n').find((x) => x && !/^(#|\||>|```|\s*[-*] |\s*\d+\. )/.test(x)) || title;
-  return { title, description: firstPara.replace(/[`*\[\]]/g, '').replace(/\([^)]*\)/g, '').slice(0, 220).trim(), html: out.join('\n') };
+  return { title, description: firstPara.replace(/\[([^\]]+)\]\([^)\s]+\)/g, '$1').replace(/[`*]/g, '').trim(), html: out.join('\n') };
 }

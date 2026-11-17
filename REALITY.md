@@ -9,6 +9,7 @@ Updated 2026-11-16 by specialist-design@AgentiCCells.dinis. If a page and this f
 - The day-one pack 1.0.0: `pack/` (tokens.css, check-design.mjs, a definition of done, a CLAUDE.md section, spec and decision templates). This site is styled with it and writes no colour of its own.
 - A design gate: `pack/check-design.mjs _site` runs in `scripts/release.sh` and in CI, beside the validator and the leak scan.
 - The review service, written down: `reviews/README.md`, `reviews/requests/` (template; no requests yet).
+- Link previews on every page (canonical, Open Graph, Twitter card) and a 1200 by 630 share card, checked by `scripts/validate.mjs` (cells@ roll-out at Dinis's word, 17 Nov). The card has no ACC mark while the Creative Commons question is open.
 - One example review, a proposal not sent: `reviews/2026-11-16__specialist-ux-site.md`.
 
 ## Does not exist yet
